@@ -1,0 +1,58 @@
+# Python-related files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.swp
+
+# Virtual environment
+venv/
+env/
+
+# Django-related files
+db.sqlite3
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.sqlite3
+
+# Environment variables
+.env
+
+# Static and media files
+/static/
+/media/
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# Byte-compiled files
+*.py[cod]
+
+# Migrations
+*/migrations/*.py
+!*/migrations/__init__.py
+
+# Coverage reports
+htmlcov/
+.coverage
+*.cover
+*.py,cover
+
+# Testing-related files
+.tox/
+.nox/
+*.test
+*.pytest_cache/
+
+# Deployment files
+*.pid
+
+# Build files
+*.egg-info/
+dist/
+build/
