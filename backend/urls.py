@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework_simplejwt.views import TokenRefreshView
-from api.views import (
+from users.views import (
     CreateOrgUserView,
     MyTokenObtainPairView,
     RegisterAdminWithOrgView,
@@ -20,5 +20,5 @@ urlpatterns = [
     ),  # Custom token view
     path("api/token/refresh/", TokenRefreshView.as_view(), name="refresh"),
     path("api-auth/", include("rest_framework.urls")),
-    path("api/", include("api.urls")),
+    path("api/", include("users.urls")),
 ]
